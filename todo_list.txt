@@ -1,0 +1,41 @@
+【閉区間】
+閉区間の下端点がとれる
+　3,3(同値)　は　許容する
+　8,3(逆転)　は　許容しない
+　　例外とする。IllegalArgumentException
+　-1,0(負数)　は　許容する
+閉区間の上端点がとれる
+
+閉区間を文字列にできる
+
+contains
+3|8|2|false
+3|8|3|true
+3|8|4|true
+3|8|7|true
+3|8|8|true
+3|8|9|false
+
+Equals
+　どうなればEqualsがTrueになるか
+　　渡されてきたRangeのlowerとupperがそれぞれ同じ値
+
+isConnectedTo
+　[3,8]に対して
+	[1,2] | false
+	[2,3] | true
+	[3,4] | true
+	[7,8] | true
+	[8,9] | true
+	[9,10] | false
+	[2,9] | true
+
+--------
+【開区間】
+開区間の下端がとれる
+開区間の上端がとれる
+
+閉区間と下の振る舞いがことなる
+contains
+toString
+isConnectedTo
